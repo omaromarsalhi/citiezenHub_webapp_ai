@@ -5,7 +5,11 @@ import ollama_vesion as ov
 
 
 app = Flask(__name__)
+<<<<<<< HEAD
 url='https://ea25-34-122-33-80.ngrok-free.app'
+=======
+url='https://4175-34-74-156-139.ngrok-free.app'
+>>>>>>> 86902ae1e004de4f29fc654de3782bdc98fa4227
 
 @app.route('/get-descreption',methods=['POST'])
 def generate():
@@ -21,6 +25,7 @@ def generate_desc_image():
     return jsonify(tuned_response),200
 
 
+<<<<<<< HEAD
 @app.route('/get-title_validation',methods=['POST'])
 def generate_title_validation():
     desc=request.args.get('desc')
@@ -38,6 +43,8 @@ def generate_category_validation():
     return jsonify(tuned_response),200
 
 
+=======
+>>>>>>> 86902ae1e004de4f29fc654de3782bdc98fa4227
 
 if __name__== '__main__':
     app.run()
